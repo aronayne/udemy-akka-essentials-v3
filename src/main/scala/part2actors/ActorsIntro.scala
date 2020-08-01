@@ -36,7 +36,7 @@ object ActorsIntro extends App{
 
   object Person {
     def props(name: String) = Props(new Person(name))
-  } 
+  }
 
   class Person(name: String) extends Actor {
     override def receive: Receive = {
